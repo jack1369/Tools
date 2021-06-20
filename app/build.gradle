@@ -3,13 +3,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "com.example.automatictools"
-        minSdkVersion 16
-        targetSdkVersion 30
+        minSdkVersion 24
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
@@ -36,4 +35,12 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation'com.hjq:xtoast:6.5'
+    implementation 'com.github.xuexiangjys:XFloatView:1.0.1'
+
+    implementation 'com.github.xuexiangjys.XUtil:xutil-core:1.1.5'
+    implementation 'com.github.xuexiangjys.XUtil:xutil-sub:1.1.5'
+    //XPage
+    implementation 'com.github.xuexiangjys.XPage:xpage-lib:2.2.2'
+    annotationProcessor 'com.github.xuexiangjys.XPage:xpage-compiler:2.2.2'
 }
